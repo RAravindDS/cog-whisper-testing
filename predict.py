@@ -137,7 +137,7 @@ class Predictor(BasePredictor):
             segments=result["segments"],
             detected_language=LANGUAGES[result["language"]],
             transcription=transcription,
-            translation=translation["text"] if translate else None,
+            translation=translation if translate else None,
         )
 
 
